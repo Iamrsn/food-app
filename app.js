@@ -20,6 +20,8 @@ app.use(morgan('dev'))
 app.use("/api/v1/test",require("./routes/testRoutes"))
 app.use("/api/v1/auth",require("./routes/authRoutes"))
 app.use("/api/v1/user",require("./routes/userRoutes"))
+app.use("/api/v1/resturant",require("./routes/resturantRoutes"))
+app.use("/api/v1/category",require("./routes/categoryRoutes"))
 //route
 app.get("/", (req, res) => {
   res.send("<h1>hlloooo bhaiii</h1>");
